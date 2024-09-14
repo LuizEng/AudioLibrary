@@ -25,7 +25,6 @@ public class AudioLibraryApp {
     	 *  \n é a quebra de linha
     	 *   %s indica que um valor do tipo string será informado para substituição
     	 */
-    	System.out.println(String.format("Audio:\n%s", retorno));
-    	
+    	System.out.println(String.format("Audio:\n%s", retorno));    	    	    	   
     }
 }

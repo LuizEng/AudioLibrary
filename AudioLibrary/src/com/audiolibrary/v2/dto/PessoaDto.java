@@ -1,13 +1,12 @@
-package com.audiolibrary.classes;
+package com.audiolibrary.v2.dto;
 
 import java.time.LocalDate;
-import java.time.Period;
 
-public class Pessoa {
-
+public class PessoaDto {
 	protected String nome;
 	
-	protected LocalDate dataNascimento;		
+	protected LocalDate dataNascimento;
+		
 	
 	public String getNome() {
 		return nome;
@@ -23,15 +22,5 @@ public class Pessoa {
 
 	public void setDataNascimento(LocalDate dataNascimento) {
 		this.dataNascimento = dataNascimento;
-	}
-
-
-	//Método para retornar a idade da pessoa
-	protected int getIdade() {
-		LocalDate dataAtual = LocalDate.now();
-		
-		Period periodo = this.dataNascimento.until(dataAtual);
-		
-		return periodo.getYears();
 	}
 }
